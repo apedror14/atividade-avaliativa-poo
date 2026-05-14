@@ -1,3 +1,8 @@
+# IMPORTANTE!!
+```
+Ao terminarem suas questões, adicionem às pastas JAVA e PYTHON apenas o arquivo referente à CLASSE e sua MAIN.
+```
+
 # Apresentação
 
 Os exercícios apresentados a seguir fazem parte dos instrumentos de avaliação da disciplina de Programação Orientada a Objetos para o NAP I (Nota de Avaliação Parcial I). No caso, referem-se ao critério de avaliação denominado “exercícios em sala em dupla” e correspondem a 30% da nota final. No entanto, em razão do contexto atual de infraestrutura, o mesmo será aplicado em grupo, como tarefa do SIGAA.
