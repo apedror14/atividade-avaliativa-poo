@@ -1,7 +1,5 @@
 package Questao1;
 
-import java.awt.*;
-
 public class Ponto2D {
     private double coordX;
     private double coordY;
