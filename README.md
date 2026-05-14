@@ -1,21 +1,21 @@
-Apresentação
+# Apresentação
 Os exercícios apresentados a seguir fazem parte dos instrumentos de avaliação da disciplina de Programação Orientada a Objetos para o NAP I (Nota de Avaliação Parcial I). No caso, referem-se ao critério de avaliação denominado “exercícios em sala em dupla” e correspondem a 30% da nota final. No entanto, em razão do contexto atual de infraestrutura, o mesmo será aplicado em grupo, como tarefa do SIGAA.
 Os exercícios devem ser respondidos em duas linguagens de programação, Python e Java. Cada solução corresponderá a um visto, certo ou errado. Então a nota final desse critério de avaliação corresponderá à proporção do número de acertos. Por exemplo:
-●      considerando que até o final do NAP I dez exercícios sejam aplicados
-●      então das 20 respostas esperadas, dez em Java e dez em Python, 18 respostas estejam corretas
-●      a nota final no critério “exercícios em sala em dupla” será 9 (nove)
-●      considerando que esse critério corresponde a 30% da nota final
-●      essa nota corresponderá a 2,7 pontos na nota final do NAP I
+* considerando que até o final do NAP I dez exercícios sejam aplicados
+* então das 20 respostas esperadas, dez em Java e dez em Python, 18 respostas estejam corretas
+* a nota final no critério “exercícios em sala em dupla” será 9 (nove)
+* considerando que esse critério corresponde a 30% da nota final
+* essa nota corresponderá a 2,7 pontos na nota final do NAP I
  
-Orientações de Submissão da Resposta
+## Orientações de Submissão da Resposta
 A submissão da solução será através de uma tarefa do SIGAA, que pode ser acessada a partir do menu “Atividades >> Tarefas”. Nessa operação, a equipe deve submeter um único arquivo, com limite de tamanho de 10Mb, conforme restrições da plataforma.
 Assim, antes de submeter a tarefa, cada equipe precisará seguir as orientações
 abaixo:
-●      Reunir todos os arquivos em Java produzidos para cada exercício, ou seja, classe da solução e mais a classe principal que manipula os objetos da solução
-●      Reunir todos os arquivos em Python produzidos para cada exercício, ou seja, arquivo da classe da solução e mais arquivo do programa principal que manipula os objetos da solução
-●      Compactar os arquivos é um único arquivo em formato ZIP, RAR ou 7z
+* Reunir todos os arquivos em Java produzidos para cada exercício, ou seja, classe da solução e mais a classe principal que manipula os objetos da solução
+* Reunir todos os arquivos em Python produzidos para cada exercício, ou seja, arquivo da classe da solução e mais arquivo do programa principal que manipula os objetos da solução
+* Compactar os arquivos é um único arquivo em formato ZIP, RAR ou 7z
 
-Exercício 1
+### Exercício 1
 Criar a classe Ponto2D que representa um ponto no plano cartesiano. Além dos atributos encapsulados por você identificados, a classe deve oferecer os seguintes métodos:
  
 a)  Construtor que permitam a inicialização do ponto, num local indicado por dois parâmetros do tipo double, indicando o valor de abcissa e ordenada do ponto que está sendo criado;
@@ -28,7 +28,7 @@ Considere implementar uma classe/programa principal que instancia/crie dois dist
 ●      imprima a distância entre os pontos
 ●      clone um do pontos e movimente o ponto clonado para uma localização distinta Atenção aos padrões de nomenclatura da classe e de seus atributos e métodos, que devem considerar o padrão CamelCase.
  
-Exercício 2
+### Exercício 2
 Criar a classe Livro abaixo com os seguintes atributos encapsulados:
 ●      Título como texto
 ●      Autor como texto
@@ -48,11 +48,7 @@ Adicionar na classe:
 Considere implementar uma classe/programa principal que instancia/crie dois livros e imprima o título e ano de publicação dos livros instanciados/criados, bem como marque uma página de cada livro criado.
 Atenção aos padrões de nomenclatura da classe e de seus atributos e métodos, que devem considerar o padrão CamelCase.
 
-Exercício 3
- 
-
-
-
+### Exercício 3
 Criar a classe NumeroComplexo, que representa um número complexo. Além dos atributos encapsulados por você identificados, a classe deve fornecer as seguintes operações:
  
 a)  Construtor com valores das partes imaginária e real;
@@ -67,7 +63,7 @@ Considere implementar uma classe/programa principal que instancia/crie dois núm
 Atenção aos padrões de nomenclatura da classe e de seus atributos e métodos, que devem considerar o padrão CamelCase.
  
  
-Exercício 4
+### Exercício 4
 Criar a classe Conta com os seguintes atributos encapsulados (privados) e                                                                                                     	seus respectivos métodos acessores (getter e setter públicos):
 ●      Banco como inteiro
 ●      Número como texto
@@ -91,7 +87,7 @@ Considere implementar uma classe/programa principal que instancia/crie duas cont
 ●      transferir um valor usando os dados (banco e número) da conta destinatária na transferência
  
  
-Exercício 5
+### Exercício 5
 Criar a classe Circulo que representa um círculo no plano cartesiano. Para tanto, além dos atributos encapsulados por você identificados, considere adicionar na classe os seguintes métodos:
  
 a)  Um construtor que receba o raio e as coordenadas do centro do círculo
