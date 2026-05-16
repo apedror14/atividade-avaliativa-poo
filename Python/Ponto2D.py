@@ -3,8 +3,7 @@ import math
 
 class Ponto2D:
 
-    # O construtor recebe as coordenadas x e y do ponto.
-    # Se nenhum valor for passado, o ponto começa na origem (0, 0).
+    # O construtor recebe as coordenadas x e y do ponto
     def __init__(self, abcissa=0.0, ordenada=0.0):
         self.__abcissa = abcissa
         self.__ordenada = ordenada
@@ -25,18 +24,18 @@ class Ponto2D:
     def setOrdenada(self, ordenada):
         self.__ordenada = ordenada
 
-    # Move o ponto para uma nova posição no plano
+    # Move o ponto para uma nova posição 
     def mover(self, abcissa, ordenada):
         self.__abcissa = abcissa
         self.__ordenada = ordenada
 
-    # Calcula a distância entre este ponto e outro usando a fórmula euclidiana
+    # Calcula a distância
     def calcularDistancia(self, outroPonto):
         deltaX = self.__abcissa - outroPonto.getAbcissa()
         deltaY = self.__ordenada - outroPonto.getOrdenada()
         return math.sqrt(deltaX ** 2 + deltaY ** 2)
 
-    # Cria um novo ponto com as mesmas coordenadas deste
+    # Cria um novo ponto 
     def clonar(self):
         return Ponto2D(self.__abcissa, self.__ordenada)
 
