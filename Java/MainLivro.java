@@ -2,28 +2,11 @@ public class MainLivro {
 
     public static void main(String[] args) {
     
-    Livro oAutoDaCompadecida = new Livro() {
-            oAutoDaCompadecida.titulo = "O Auto da Compadecida";
-            oAutoDaCompadecida.autor = "Ariano Suassuna";
-            oAutoDaCompadecida.anoPublicacao =  1942;
-            oAutoDaCompadecida.numPag =  100;
-            oAutoDaCompadecida.peso =  0.5;
-            oAutoDaCompadecida.volume = 1.2;
-    }
+    Livro oAutoDaCompadecida = new Livro("O Auto da Compadecida", "Ariano Suassuna", 1942, 100, 0.5, 1.2);
 
-        Livro oExorcista = new Livro(){
-            oAutoDaCompadecida.titulo = "O Auto da Compadecida";
-            oAutoDaCompadecida.autor = "Ariano Suassuna";
-            oAutoDaCompadecida.anoPublicacao =  1942;
-            oAutoDaCompadecida.numPag =  100;
-            oAutoDaCompadecida.peso =  0.5;
-            oAutoDaCompadecida.volume = 1.2;
-        {
-        
-               
+        Livro oExorcista = new Livro("O Auto da Compadecida", "Ariano Suassuna", 1942, 100, 0.5, 1.2);
 
-
-        System.out.println("Livro 1: ", oAutoDaCompadecida.getTitulo(), " - ", oAutoDaCompadecida.getAnoPublicacao());
+        System.out.println("Livro 1: " + oAutoDaCompadecida.getTitulo() + " - " + oAutoDaCompadecida.getAnoPublicacao());
 
         oAutoDaCompadecida.marcarPagina(100);
         

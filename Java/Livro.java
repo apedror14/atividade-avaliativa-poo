@@ -1,14 +1,14 @@
 public class Livro {
 
 
-    private string titulo;
-    private string autor;
+    private String titulo;
+    private String autor;
     private int anoPublicacao;
     private int numPag;
     private double peso;
     private double volume;
 
-    public Livro(titulo, autor, anoPublicacao, numPag, peso, volume) {
+    public Livro(String titulo,String autor,int anoPublicacao,int numPag,double peso,double volume) {
 
         this.titulo = titulo;
         this.autor = autor;
@@ -18,19 +18,19 @@ public class Livro {
         this.volume = volume;
     }
 
-    public string getTitulo() {
+    public String getTitulo() {
         return titulo;
     }
 
-    public void setTitulo(titulo) {
+    public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
-    public string getAutor() {
+    public String getAutor() {
         return autor;
     }
 
-    public void setAutor(autor) {
+    public void setAutor(String autor) {
         this.autor = autor;
     }
 
@@ -38,7 +38,7 @@ public class Livro {
         return anoPublicacao;
     }
 
-    public void setAnoPublicacao(anoPublicacao) {
+    public void setAnoPublicacao(int anoPublicacao) {
         this.anoPublicacao = anoPublicacao;
     }
 
@@ -46,7 +46,7 @@ public class Livro {
         return numPag;
     }
 
-    public void setNumPag(numPag) {
+    public void setNumPag(int numPag) {
         this.numPag = numPag;
     }
 
@@ -54,7 +54,7 @@ public class Livro {
         return peso;
     }
 
-    public void setPeso(peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
 
@@ -62,14 +62,14 @@ public class Livro {
         return volume;
     }
 
-    public void setVolume(volume) {
+    public void setVolume(double volume) {
         this.volume = volume;
     }
 
-    public void marcarPagina(numero) {
+    public void marcarPagina( int numero) {
 
         if (numero > 0 && numero <= numPag) {
-            System.out.println("Livro marcado na página: %d/n", numero);
+            System.out.println("Livro marcado na página: " + numero);
         } else {
             System.out.println("Página inválida!");
         }
