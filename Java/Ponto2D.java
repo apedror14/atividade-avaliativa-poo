@@ -1,4 +1,3 @@
-package Questao1;
 
 public class Ponto2D {
     private double coordX;

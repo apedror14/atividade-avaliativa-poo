@@ -18,11 +18,9 @@ def main():
     print(f"  X = {ponto2.getAbcissa()}")
     print(f"  Y = {ponto2.getOrdenada()}")
 
-    # Calculando distância
     distancia = ponto1.calcularDistancia(ponto2)
     print(f"\nDistância entre os dois pontos: {distancia:.2f}")
 
-    # Clonando/movendo
     pontoClone = ponto1.clonar()
     print(f"\nClone do Ponto 1 criado na posição {pontoClone}")
 

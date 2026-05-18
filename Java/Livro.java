@@ -69,7 +69,7 @@ public class Livro {
     public void marcarPagina( int numero) {
 
         if (numero > 0 && numero <= numPag) {
-            System.out.println("Livro marcado na página: " + numero);
+            System.out.println("Livro marcado na página " + numero);
         } else {
             System.out.println("Página inválida!");
         }

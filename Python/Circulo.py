@@ -42,7 +42,7 @@ class Circulo:
     def getRaio(self):
         return self.__raio
 
-    def setRaio(self):
+    def setRaio(self, raio):
         if raio >= 0:
             self.__raio = float(raio)
         else:

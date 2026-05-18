@@ -1,4 +1,3 @@
-package Java;
 public class Conta {
     private int banco;
     private String numero;
@@ -16,20 +15,17 @@ public class Conta {
     public void setNumero(String numero) {
         this.numero = numero;
     }    
-    
 
     public Conta(int banco, String numero) {
         this.banco = banco;
         this.numero = numero;
     }
 
-    
     public void transferir(int banco, String numero, double valor) {
-        System.out.println("Transferindo R$ " + valor + " para a conta " + numero + " do banco " + banco);
+        System.out.println("Transferindo " + valor + " para conta Banco: " + banco + ", Numero: " + numero);
     }
     
     public void transferir(Conta conta, double valor) {
-        System.out.println("Transferindo R$ " + valor + " para a conta " + conta.getNumero() + " do banco " + conta.getBanco());
+        System.out.println("Transferindo " + valor + " para conta Banco: " + conta.getBanco() + ", Numero: " + conta.getNumero());
     }
-   
 }

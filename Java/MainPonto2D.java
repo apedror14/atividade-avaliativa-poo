@@ -1,4 +1,3 @@
-package Questao1;
 
 public class MainPonto2D {
     public static void main(String[] args) {

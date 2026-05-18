@@ -7,32 +7,27 @@ class Ponto2D:
         self.__abcissa = abcissa
         self.__ordenada = ordenada
 
-    # Retorna x
     def getAbcissa(self):
         return self.__abcissa
 
     def setAbcissa(self, abcissa):
         self.__abcissa = abcissa
 
-    # Retorna y
     def getOrdenada(self):
         return self.__ordenada
 
     def setOrdenada(self, ordenada):
         self.__ordenada = ordenada
 
-    # Move Ponto
     def mover(self, abcissa, ordenada):
         self.__abcissa = abcissa
         self.__ordenada = ordenada
 
-    # Calcula distância
     def calcularDistancia(self, outroPonto):
         deltaX = self.__abcissa - outroPonto.getAbcissa()
         deltaY = self.__ordenada - outroPonto.getOrdenada()
         return math.sqrt(deltaX ** 2 + deltaY ** 2)
 
-    # Cria ponto 
     def clonar(self):
         return Ponto2D(self.__abcissa, self.__ordenada)
 

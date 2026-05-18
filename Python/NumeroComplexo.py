@@ -5,20 +5,18 @@ class NumeroComplexo:
         self.__parteImaginaria = parteImaginaria
 
     def somar(self, outroComplexo):
-        novoReal = self.__parteReal + outroComplexo.getParteReal()
-        novoImaginario = self.__parteImaginaria + outroComplexo.getParteImaginaria()
-        return NumeroComplexo(novoReal, novoImaginario)
+        self.__parteReal += outroComplexo.getParteReal()
+        self.__parteImaginaria += outroComplexo.getParteImaginaria()
 
     def subtrair(self, outroComplexo):
-        novoReal = self.__parteReal - outroComplexo.getParteReal()
-        novoImaginario = self.__parteImaginaria - outroComplexo.getParteImaginaria()
-        return NumeroComplexo(novoReal, novoImaginario)
+        self.__parteReal -= outroComplexo.getParteReal()
+        self.__parteImaginaria -= outroComplexo.getParteImaginaria()
 
     def imprimir(self):
         if self.__parteImaginaria >= 0:
-            print(f"{self.__parteReal} + {self.__parteImaginaria}i")
+            print(f"{self.__parteReal} + i{self.__parteImaginaria}")
         else:
-            print(f"{self.__parteReal}  {self.__parteImaginaria}i")
+            print(f"{self.__parteReal} - i{abs(self.__parteImaginaria)}")
 
 
 
