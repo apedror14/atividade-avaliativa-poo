@@ -3,7 +3,6 @@ import math
 
 class Ponto2D:
 
-    # O construtor coordenada
     def __init__(self, abcissa=0.0, ordenada=0.0):
         self.__abcissa = abcissa
         self.__ordenada = ordenada
@@ -12,7 +11,6 @@ class Ponto2D:
     def getAbcissa(self):
         return self.__abcissa
 
-    # Atualiza x
     def setAbcissa(self, abcissa):
         self.__abcissa = abcissa
 
@@ -20,7 +18,6 @@ class Ponto2D:
     def getOrdenada(self):
         return self.__ordenada
 
-    # Atualiza y
     def setOrdenada(self, ordenada):
         self.__ordenada = ordenada
 
