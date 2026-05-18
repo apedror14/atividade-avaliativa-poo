@@ -3,7 +3,6 @@ from Ponto2D import Ponto2D
 
 def main():
 
-    # Criando dois pontos no plano cartesiano
     ponto1 = Ponto2D(3.0, 4.0)
     ponto2 = Ponto2D(-1.5, 7.5)
 
@@ -11,7 +10,6 @@ def main():
     print(f"  Ponto 1: {ponto1}")
     print(f"  Ponto 2: {ponto2}")
 
-    # Exibindo as coordenadas separadamente usando os getters
     print("\nCoordenadas do Ponto 1:")
     print(f"  X = {ponto1.getAbcissa()}")
     print(f"  Y = {ponto1.getOrdenada()}")
@@ -20,11 +18,11 @@ def main():
     print(f"  X = {ponto2.getAbcissa()}")
     print(f"  Y = {ponto2.getOrdenada()}")
 
-    # Calculando a distância entre os dois pontos
+    # Calculando distância
     distancia = ponto1.calcularDistancia(ponto2)
     print(f"\nDistância entre os dois pontos: {distancia:.2f}")
 
-    # Clonando o ponto 1 e movendo o clone
+    # Clonando/movendo
     pontoClone = ponto1.clonar()
     print(f"\nClone do Ponto 1 criado na posição {pontoClone}")
 
@@ -33,7 +31,6 @@ def main():
 
     print(f"Ponto 1 continua em: {ponto1}")
 
-    # Usando os setters para mover o ponto 2 até a origem
     print("\nMovendo o Ponto 2 para a origem...")
     ponto2.setAbcissa(0.0)
     ponto2.setOrdenada(0.0)
