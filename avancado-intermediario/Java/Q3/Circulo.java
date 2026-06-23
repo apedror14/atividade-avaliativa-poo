@@ -1,7 +1,7 @@
 public class Circulo extends Figura {
     private double raio;
 
-    public Circulo(int x, int y, double raio) {
+    public Circulo(double x, double y, double raio) {
         super(x, y);
         System.out.println("Criando círculo");
         this.raio = raio;
