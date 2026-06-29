@@ -1,4 +1,4 @@
-public class Main {
+public class PrincipalFigura {
     public static void main(String[] args) {
         
         Figura figura = new Figura(1.0, 0.0);
