@@ -9,12 +9,10 @@ public class PrincipalFigura {
         circulo.desenhar();
         retangulo.desenhar();
 
-        Figura variavelFigura;
+        Figura figuraC = circulo;
+        Figura figuraR = retangulo;
 
-        variavelFigura = circulo;
-        variavelFigura.desenhar();
-
-        variavelFigura = retangulo;
-        variavelFigura.desenhar();
+        figuraC.desenhar();
+        figuraR.desenhar();
     }
 }
