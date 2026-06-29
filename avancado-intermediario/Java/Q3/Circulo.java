@@ -6,7 +6,8 @@ public class Circulo extends Figura {
         this.raio = raio;
         System.out.println("Criando círculo");
     }
-
+    
+    @Override
     public void desenhar() {
         System.out.println("Desenhando um círculo na posição (" + getX() + ", " + getY() + ") com raio de " + raio);
     }
