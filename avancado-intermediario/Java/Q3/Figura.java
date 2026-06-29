@@ -25,8 +25,6 @@ public class Figura {
     }
 
     public void desenhar() {
-        System.out.println(
-            "Desenhando uma figura na posição (" + x + ", " + y + ")"
-        );
+        System.out.println("Desenhando uma figura na posição (" + x + ", " + y + ")");
     }
 }
