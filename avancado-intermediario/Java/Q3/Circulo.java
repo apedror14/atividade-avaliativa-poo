@@ -4,7 +4,7 @@ public class Circulo extends Figura {
     public Circulo(double x, double y, double raio) {
         super(x, y);
         this.raio = raio;
-        System.out.println("Criando círculo");
+        System.out.println("Criando círculo...");
     }
     
     @Override
