@@ -3,7 +3,9 @@ public class Figura{
   private double y;
 
 public Figura(double x, double y) {
-        System.out.println("Criando figura");
+  System.out.println("Criando figura");
+  this.x = x;
+  this.y = y;
    }
   
 public double getX(){
@@ -20,7 +22,7 @@ public void setX(){
 public void setY(){
   this.y = y;
 }
-  public string desenhar(){
+  public String desenhar(){
     System.out.println("Desenhando uma figura na posição (" + x + ", " + y + ")");
   }
 }
