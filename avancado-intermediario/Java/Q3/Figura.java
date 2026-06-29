@@ -22,5 +22,6 @@ public void setY(){
 }
   public string desenhar(){
     System.out.println("Desenhando uma figura na posição (" + x + ", " + y + ")");
-    }
+  }
+}
   
