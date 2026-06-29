@@ -3,7 +3,7 @@ public class Retangulo extends Figura {
     private double altura;
 
     public Retangulo(double x, double y, double base, double altura) {
-       System.out.println("Criando retângulo");
+       System.out.println("Criando retângulo...");
       super(x, y);
         this.base = base;
         this.altura = altura;
