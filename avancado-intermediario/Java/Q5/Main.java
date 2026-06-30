@@ -1,0 +1,46 @@
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        ArrayList<Objeto> listaDeObjetosDoJogo = new ArrayList<>();
+
+        listaDeObjetosDoJogo.add(new Arvore(10));
+        listaDeObjetosDoJogo.add(new Arvore(20));
+        listaDeObjetosDoJogo.add(new Veiculo("Azul"));
+        listaDeObjetosDoJogo.add(new Veiculo("Verde"));
+        listaDeObjetosDoJogo.add(new Personagem("Knight"));
+        listaDeObjetosDoJogo.add(new Personagem("Hornet"));
+
+        System.out.println("===== Lista de Objetos =====\n");
+
+        for (Objeto objeto : listaDeObjetosDoJogo) {
+            System.out.println(objeto);
+            System.out.println();
+        }
+
+        ArrayList<Movimento> listaDeMovimento = new ArrayList<>();
+
+        listaDeMovimento.add(new Personagem("Sans"));
+        listaDeMovimento.add(new Veiculo("Verde"));
+        listaDeMovimento.add(new Personagem("Papyrus"));
+
+        Random random = new Random();
+
+        System.out.println("===== Objetos Movidos =====\n");
+
+        for (Movimento movimento : listaDeMovimento) {
+
+            double x = Math.round(random.nextDouble() * 10);
+            double y = Math.round(random.nextDouble() * 10);
+
+            movimento.mover(x, y);
+
+            System.out.println(movimento);
+            System.out.println();
+        }
+
+    }
+}

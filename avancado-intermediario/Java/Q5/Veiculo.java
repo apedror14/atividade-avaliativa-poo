@@ -15,6 +15,10 @@ public class Veiculo extends Objeto implements Movimento {
         return cor;
     }
 
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
     @Override
     public void mover(double x, double y) {
         setX(x);

@@ -26,6 +26,7 @@ def main():
     brasil.adicionarFronteira(paraguai)
     brasil.adicionarFronteira(uruguai)
     brasil.adicionarFronteira(bolivia)
+    brasil.adicionarFronteira(peru)
 
     argentina.adicionarFronteira(brasil)
     argentina.adicionarFronteira(paraguai)
@@ -53,7 +54,7 @@ def main():
     chile.adicionarFronteira(bolivia)
     chile.adicionarFronteira(peru)
 
-    paisesFronteiraBrasil = [argentina, paraguai, uruguai, bolivia]
+    paisesFronteiraBrasil = [argentina, paraguai, uruguai, bolivia, peru]
 
     print('=' * 60)
     print('  FRONTEIRAS COM O SUL E CENTRO-OESTE DO BRASIL')

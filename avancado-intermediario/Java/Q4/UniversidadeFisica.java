@@ -17,4 +17,9 @@ public class UniversidadeFisica extends Universidade{
     public void aplicarAvaliacao(){
         System.out.println("Avaliações presenciais no campus " + getCampus());
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " (Física) | Campus: " + campus;
+    }
 }

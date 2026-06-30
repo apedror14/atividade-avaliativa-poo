@@ -5,15 +5,15 @@ public class Pais {
     private String codigoIso;
     private String nome;
     private long populacao;
-    private double dimensao;
+    private double dimensaoKm2;
     private List<Pais> fronteiras;
 
 
     
-    public Pais(String codigoIso, String nome, double dimensao) {
+    public Pais(String codigoIso, String nome, double dimensaoKm2) {
         this.codigoIso = codigoIso;
         this.nome = nome;
-        this.dimensao = dimensao;
+        this.dimensaoKm2 = dimensaoKm2;
         this.populacao = 0; 
         this.fronteiras = new ArrayList<>();
     }
@@ -24,15 +24,6 @@ public class Pais {
 
     public void setCodigoIso(String codigoIso) {
         this.codigoIso = codigoIso;
-    }
-
-
-    public String getCodigoIsso() {
-        return codigoIso;
-    }
-
-    public void setCodigoIsso(String codigoIsso) {
-        this.codigoIso = codigoIsso;
     }
 
     public String getNome() {
@@ -51,12 +42,12 @@ public class Pais {
         this.populacao = populacao;
     }
 
-    public double getDimensao() {
-        return dimensao;
+    public double getDimensaoKm2() {
+        return dimensaoKm2;
     }
 
-    public void setDimensao(double dimensao) {
-        this.dimensao = dimensao;
+    public void setDimensaoKm2(double dimensaoKm2) {
+        this.dimensaoKm2 = dimensaoKm2;
     }
 
     public List<Pais> getFronteiras() {
@@ -113,10 +104,10 @@ public class Pais {
     }
 
     public double getDensidadePopulacional() {
-        if (this.dimensao <= 0) {
+        if (this.dimensaoKm2 <= 0) {
             return 0.0;
         }
-        return (double) this.populacao / this.dimensao;
+        return (double) this.populacao / this.dimensaoKm2;
     }
 
 
@@ -140,7 +131,7 @@ public class Pais {
                 "codigoIso='" + codigoIso + '\'' +
                 ", nome='" + nome + '\'' +
                 ", populacao=" + populacao +
-                ", dimensao=" + dimensao +
+                ", dimensaoKm2=" + dimensaoKm2 +
                 ", fronteiras=" + fronteiras.size() + " vizinho(s)" +
                 '}';
     }

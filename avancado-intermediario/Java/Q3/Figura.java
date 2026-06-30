@@ -5,7 +5,7 @@ public class Figura {
     public Figura(double x, double y) {
         this.x = x;
         this.y = y;
-        System.out.println("Criando figura...");
+        System.out.println("Criando figura");
     }
 
     public double getX() {
@@ -26,5 +26,10 @@ public class Figura {
 
     public void desenhar() {
         System.out.println("Desenhando uma figura na posição (" + x + ", " + y + ")");
+    }
+
+    @Override
+    public String toString() {
+        return "Figura na posição (" + x + ", " + y + ")";
     }
 }

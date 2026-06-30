@@ -15,7 +15,6 @@ public class Pessoa {
         this.mae = null;
     }
 
-    //getNome não pedido explicitamente mas necessário para fazermos comparações exigidas na questão
     public String getNome() {
         return nome;
     }
@@ -57,5 +56,12 @@ public class Pessoa {
         boolean ancestralPelaMae = (this.mae != null && this.mae.verificarAncestralidade(possivelAncestral));
 
         return ancestralPeloPai || ancestralPelaMae;
+    }
+
+    @Override
+    public String toString() {
+        String nomePai = (pai != null) ? pai.getNome() : "desconhecido(a)";
+        String nomeMae = (mae != null) ? mae.getNome() : "desconhecido(a)";
+        return "Nome: " + nome + ", Pai: " + nomePai + ", Mãe: " + nomeMae;
     }
 }

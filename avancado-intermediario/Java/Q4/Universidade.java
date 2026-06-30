@@ -14,4 +14,9 @@ public abstract class Universidade{
     }
 
     public abstract void aplicarAvaliacao();
+
+    @Override
+    public String toString() {
+        return "Universidade: " + nome;
+    }
 }

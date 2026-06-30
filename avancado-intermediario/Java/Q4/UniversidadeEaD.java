@@ -17,4 +17,9 @@ public class UniversidadeEaD extends Universidade{
     public void aplicarAvaliacao(){
         System.out.println("Avaliações Online na " + getUrlPlataforma());
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " (EaD) | Plataforma: " + urlPlataforma;
+    }
 }

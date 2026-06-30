@@ -18,7 +18,6 @@ class Objeto(ABC):
     def setY(self, y):
         self.__y = y
 
-    @abstractmethod
     def __str__(self):
-        return (f"Posição X = {self.getX()} \n"
-                f"Posição Y = {self.getY()} \n")
+        return (f"Posição X = {self.getX()}\n"
+                f"Posição Y = {self.getY()}\n")

@@ -13,3 +13,6 @@ class Universidade(ABC):
     @abstractmethod
     def aplicarAvaliacao(self):
         pass
+
+    def __str__(self) -> str:
+        return f"Universidade: {self.getNome()}"

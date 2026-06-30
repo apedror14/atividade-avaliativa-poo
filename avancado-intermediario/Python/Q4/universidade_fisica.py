@@ -14,3 +14,6 @@ class UniversidadeFisica(Universidade):
 
     def aplicarAvaliacao(self):
         print(f"Avaliações presenciais no campus {self.getCampus()}")
+
+    def __str__(self) -> str:
+        return f"UniversidadeFisica: {self.getNome()} | Campus: {self.getCampus()}"

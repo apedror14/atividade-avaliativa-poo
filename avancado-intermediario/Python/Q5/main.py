@@ -10,12 +10,12 @@ class Main:
 
     for objeto in listaDeObjetosDoJogo:
         print(objeto)
-        print() #Para separar a descrição dos objetos
+        print()
 
     listaDeMovimento = [Personagem("Sans"), Veiculo("Verde"), Personagem("Papyrus")]
 
     for objeto in listaDeMovimento:
         objeto.mover(round(random.uniform(0.0, 10.0)), round(random.uniform(0.0, 10.0)))
         print(objeto)
-        print() #Para separar a descrição dos objetos
+        print()
 

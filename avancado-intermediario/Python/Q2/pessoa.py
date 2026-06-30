@@ -1,69 +1,50 @@
 class Pessoa:
-    def __init__(self,nome, pai=None, mae=None):
+    def __init__(self, nome: str, pai: 'Pessoa' = None, mae: 'Pessoa' = None):
         self.__nome = nome
-        self.__mae = mae
         self.__pai = pai
+        self.__mae = mae
 
-    def getNome(self):
+    def getNome(self) -> str:
         return self.__nome
 
-    def getPai(self):
+    def getPai(self) -> 'Pessoa':
         return self.__pai
 
-    def getMae(self):
+    def getMae(self) -> 'Pessoa':
         return self.__mae
 
-    def igualdadeSemantica(self, outraPessoa):
+    def verificarIgualdadeSemantica(self, outraPessoa: 'Pessoa') -> bool:
         if outraPessoa is None:
             return False
-        return (outraPessoa.getNome() == self.__nome and
-                outraPessoa.getPai() == self.__pai and
-                outraPessoa.getMae() == self.__mae)
+        mesmoNome = self.__nome == outraPessoa.getNome()
+        mesmoPai = self.__pai is outraPessoa.getPai()
+        mesmaMae = self.__mae is outraPessoa.getMae()
+        return mesmoNome and mesmoPai and mesmaMae
 
+    def verificarIrmandade(self, outraPessoa: 'Pessoa') -> bool:
+        if outraPessoa is None or self.verificarIgualdadeSemantica(outraPessoa):
+            return False
+        
+        mesmoPai = self.__pai is not None and self.__pai.verificarIgualdadeSemantica(outraPessoa.getPai())
+        mesmaMae = self.__mae is not None and self.__mae.verificarIgualdadeSemantica(outraPessoa.getMae())
+        
+        return mesmoPai or mesmaMae
 
-
-
-    def saoIrmas(self, outraPessoa):
-        if self.igualdadeSemantica(outraPessoa):
+    def verificarAncestralidade(self, possivelAncestral: 'Pessoa') -> bool:
+        if possivelAncestral is None:
             return False
 
-        if (self.__pai != None and self.__pai == outraPessoa.getPai()):
-            return True
-        else:
-            if (self.__mae != None and self.__mae == outraPessoa.getMae()):
-                return True
-            else:
-                return False
-
-
-
-    def eAncestral(self, outraPessoa):
-        if outraPessoa is None:
-            return False
-
-        paiDaOutra = outraPessoa.getPai()
-        maeDaOutra = outraPessoa.getMae()
-
-        if (paiDaOutra is not None and self == paiDaOutra) or \
-           (maeDaOutra is not None and self == maeDaOutra):
+        if (self.__pai is not None and self.__pai.verificarIgualdadeSemantica(possivelAncestral)) or \
+           (self.__mae is not None and self.__mae.verificarIgualdadeSemantica(possivelAncestral)):
             return True
 
-        if paiDaOutra is not None:
-            if self.eAncestral(paiDaOutra):
-                return True
+        ancestralPeloPai = self.__pai is not None and self.__pai.verificarAncestralidade(possivelAncestral)
+        ancestralPelaMae = self.__mae is not None and self.__mae.verificarAncestralidade(possivelAncestral)
 
-        if maeDaOutra is not None:
-            if self.eAncestral(maeDaOutra):
-                return True
+        return ancestralPeloPai or ancestralPelaMae
 
-        return False
+    def __str__(self) -> str:
+        nomePai = self.__pai.getNome() if self.__pai is not None else "desconhecido(a)"
+        nomeMae = self.__mae.getNome() if self.__mae is not None else "desconhecido(a)"
+        return "Nome: " + self.__nome + ", Pai: " + nomePai + ", Mãe: " + nomeMae
 
-    def __str__(self):
-        return "Nome: " + self.__nome
-
-    def __eq__(self, outraPessoa):
-        if outraPessoa is None or not isinstance(outraPessoa, Pessoa):
-            return False
-        return (self.__nome == outraPessoa.getNome() and
-                self.__pai == outraPessoa.getPai() and
-                self.__mae == outraPessoa.getMae())

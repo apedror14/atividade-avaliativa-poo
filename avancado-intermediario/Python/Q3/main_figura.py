@@ -1,6 +1,3 @@
-#Caso a "main_figura.ipnynb" nao funcione direito em outros compiladores fiz esse .py tambem
-
-
 from figura import Figura
 from circulo import Circulo
 from retangulo import Retangulo

@@ -10,6 +10,9 @@ class Veiculo(Objeto, Movimento):
     def getCor(self):
         return self.__cor
 
+    def setCor(self, cor):
+        self.__cor = cor
+
     def mover(self, x, y):
         self.setX(x)
         self.setY(y)

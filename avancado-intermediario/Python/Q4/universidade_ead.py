@@ -15,3 +15,7 @@ class UniversidadeEaD(Universidade):
     def aplicarAvaliacao(self):
         print(f"Avaliações Online na {self.getUrlPlataforma()}")
 
+    def __str__(self) -> str:
+        return f"UniversidadeEaD: {self.getNome()} | URL: {self.getUrlPlataforma()}"
+
+
